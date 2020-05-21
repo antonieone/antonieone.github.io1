@@ -13,17 +13,11 @@ nav {
   background: #000; }
 
 header {
-  height: 100vh; }
-
-.cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: url(../images/header.jpg);
-  background-size: cover;
+  position: relative;
   width: 100%;
-  height: 100%; }
+  height: 100vh;
+  background: url(../images/header.jpg);
+  background-size: cover; }
 
 /*.cover::before{ darkfone
   content: "";
@@ -86,9 +80,8 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   transition: 1s; }
-
-.button:hover {
-  transform: scale(1.1); }
+  .button:hover {
+    transform: scale(1.1); }
 
 @media only screen and (min-width: 1024px) {
   .nav_above > ul > li {
@@ -117,5 +110,80 @@ header {
   .likes_icon > a,
   .cart_icon > a {
     color: #FFF; } }
+section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000; }
+
+.upper_category {
+  position: relative;
+  top: -3rem;
+  background: #ECBA82;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+  .upper_category > p {
+    display: none; }
+  .upper_category > h1 {
+    font-size: 1.5rem; }
+
+.category > figure::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: 0.5; }
+
+.category {
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto; }
+  .category > figure {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+  .category > figure > a {
+    flex: 1; }
+  .category > figure > a > img {
+    max-width: 100%; }
+  .category > figure > figcaption {
+    align-self: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .category > figure > figcaption > h2, .category a {
+    color: #FFF;
+    font-size: 2.5rem; }
+  .category > figure > figcaption > a {
+    font-size: 1.2rem; }
+
+@media only screen and (min-width: 1024px) {
+  .upper_category {
+    justify-content: space-between; }
+    .upper_category > p {
+      display: inline-flex;
+      padding-left: .8rem; }
+    .upper_category > h1 {
+      font-size: 1.8rem; }
+
+  .category {
+    flex-direction: row;
+    padding: 0 1rem;
+    max-width: 75%; } }
+@media only screen and (max-width: 669px) {
+  .category {
+    max-width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */

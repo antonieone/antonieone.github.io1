@@ -13,18 +13,22 @@ nav{
   background: $black_color;
 }
 header{
+  position: relative;
+  width: 100%;
   height: 100vh;
-}
-.cover{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
   background: url(../images/header.jpg);
   background-size: cover;
-  width: 100%;
-  height: 100%;
 }
+
+// .cover{
+//   position: absolute;
+//   left: 0;
+//   z-index: -1;
+//   background: url(../images/header.jpg);
+//   background-size: cover;
+//   width: 100%;
+//   height: 100%;
+// }
 /*.cover::before{ darkfone
   content: "";
   position: absolute;
@@ -83,9 +87,9 @@ header{
   text-transform: uppercase;
   font-weight: bold;
   transition: 1s;
-}
-.button:hover{
+  &:hover{
   transform: scale(1.1);
+  }
 }
 @media only screen and (min-width: 1024px){
   .nav_above > ul > li{
