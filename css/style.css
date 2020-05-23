@@ -256,5 +256,35 @@ header {
   .left_inside_img > img {
     max-width: 100%;
     transform: translateX(13rem); } }
+.discover_new_collection {
+  background: #000; }
+
+.discover_nc_head {
+  background: #000;
+  max-width: 80%;
+  margin: 0 auto;
+  transform: translateY(-3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+  .discover_nc_head > p {
+    display: none;
+    color: #FFF; }
+  .discover_nc_head > h1 {
+    font-size: 1.5rem;
+    color: #FFF; }
+
+.discovery_nc_img {
+  display: flex;
+  align-items: center;
+  flex-flow: column; }
+  .discovery_nc_img > figure {
+    flex: 1;
+    padding: 0 5rem; }
+  .discovery_nc_img > figure > a > img {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */

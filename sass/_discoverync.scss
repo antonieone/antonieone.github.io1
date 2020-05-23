@@ -1,0 +1,36 @@
+.discover_new_collection{
+  background: $black_color;
+}
+
+.discover_nc_head{
+  background: $black_color;
+  max-width: 80%;
+  margin: 0 auto;
+  transform: translateY(-3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  & > p{
+    display: none;
+    color: $white_color;
+  }
+  & > h1{
+    font-size: 1.5rem;
+    color: $white_color;
+  }
+}
+
+.discovery_nc_img{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+ & > figure{
+   flex: 1;
+   padding:0 5rem;
+ }& > figure > a > img{
+   max-width: 100%;
+   -o-object-fit: cover;
+      object-fit: cover;
+ }
+}
