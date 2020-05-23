@@ -1,10 +1,4 @@
-section{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: $black_color;
-}
+
 // section::before{
 //   content: '';
 //   position: absolute;
@@ -16,13 +10,16 @@ section{
 //   background: $black_color;
 // }
 
-
-.upper_category{
+.categoryHead{
+  background: $black_color;
   position: relative;
-  top: -3rem;
+  padding-bottom: 5rem;
+}
+.upper_category{
   background: $beige_color;
   max-width: 80%;
   margin: 0 auto;
+  transform: translateY(-3rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +31,7 @@ section{
     font-size: 1.5rem;
   }
 }
-.category > figure::before{
+.category > figure > a::before{
   content: '';
   position: absolute;
   top: 0;
@@ -45,20 +42,23 @@ section{
   opacity: 0.5;
 }
 .category{
-  max-width: 65%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   margin: 0 auto;
  & > figure{
-   flex: 1;
    display: flex;
-   flex-direction: column;
+   flex-flow: column wrap;
+   justify-content: center;
    position: relative;
+   padding: 1rem;
  }& > figure > a{
-   flex: 1;
+   display: flex;
+   justify-content: center;
+   position: relative;
  }& > figure > a > img{
    max-width: 100%;
+   flex: 1;
  }& > figure > figcaption {
    align-self: center;
    position: absolute;
@@ -85,12 +85,22 @@ section{
  }
  .category {
    flex-direction: row;
-   padding: 0 1rem;
-   max-width: 75%;
+   padding: 1rem;
+   max-width: 80%;
+  & > figure{
+   flex: 1;
+   padding: 0;
+ }& > figure > a{
+   height: 26rem
+ }& > figure > a > img{
+   flex: 1;
+   -o-object-fit: cover;
+      object-fit: cover;
  }
 }
-@media only screen and (max-width: 669px){
-  .category {
-    max-width: 80%;
-  }
 }
+// @media only screen and (max-width: 669px){
+//   .category {
+//     max-width: 80%;
+//   }
+// }

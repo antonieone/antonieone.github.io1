@@ -70,10 +70,10 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
 .header_text{
   color: $white_color;
+  text-align: center;
  & > h1{
   font-size: 3rem;
   padding: 1rem 0;
@@ -92,6 +92,11 @@ header{
   }
 }
 @media only screen and (min-width: 1024px){
+  .header_text{
+    align-self: flex-start;
+    padding: 0 9rem;
+    text-align: start;
+  }
   .nav_above > ul > li{
     display: block;
     color: $white_color;
