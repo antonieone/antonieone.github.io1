@@ -1,0 +1,49 @@
+.contactUs{
+  display: flex;
+  flex-flow: column;
+}
+.left_side_contact{
+  position: relative;
+  flex: 2;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  & > img{
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+       vertical-align: bottom;
+  }
+}
+.inside_left_contact{
+  background: $beige_color;
+  color: $black_color;
+  position: absolute;
+  text-align: center;
+  padding: 1rem;
+  & > h1{
+    padding-bottom: $paddingContactText;
+  }& > p{
+    padding-bottom: $paddingContactText;
+  }& > div > p{
+    padding-bottom: $paddingContactText;
+  }
+}
+.right_side_map{
+  flex: 3;
+}
+
+@media screen and (min-width:$minWidth) {
+  .contactUs{
+    flex-flow: row;
+  }
+  .left_side_contact{
+    justify-content: center;
+  }
+  .inside_left_contact{
+    position: absolute;
+    transform: translateX(15rem);
+    padding: 7rem 1rem;
+    text-align: inherit;
+  }
+}

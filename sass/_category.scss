@@ -28,7 +28,7 @@
     display: none;
   }
   & > h1{
-    font-size: 1.5rem;
+    @include adapFont;
   }
 }
 .category > figure > a::before{
@@ -67,7 +67,7 @@
    align-items: center;
  }& > figure > figcaption > h2,a{
    color: $white_color;
-   font-size: 2.5rem;
+   @include adapCategFont;
  }& > figure > figcaption > a{
    font-size: 1.2rem;
  }

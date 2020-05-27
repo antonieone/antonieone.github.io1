@@ -75,7 +75,7 @@ header{
   color: $white_color;
   text-align: center;
  & > h1{
-  font-size: 3rem;
+  @include adapHeaderFont;
   padding: 1rem 0;
  }& > p{
   font-size: 1rem;

@@ -7,3 +7,15 @@
   text-decoration: none;
   color: $white_color;
 }
+@mixin adapFont{
+  font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1920 - 320)));
+}
+@mixin adapCategFont {
+  font-size: calc(22px + (42 - 22) * ((100vw - 320px) / (1920 - 320)));
+}
+@mixin adapHeaderFont {
+  font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (1920 - 320)));
+}
+@mixin adaptItemCardFont {
+  font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
+}
