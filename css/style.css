@@ -190,8 +190,6 @@ header {
     .category > figure {
       flex: 1;
       padding: 0; }
-    .category > figure > a {
-      height: 26rem; }
     .category > figure > a > img {
       flex: 1;
       -o-object-fit: cover;
@@ -226,9 +224,9 @@ header {
   flex: 1;
   text-align: center; }
   .left_inside_text > h2 {
-    padding-bottom: 5rem; }
+    padding-bottom: 2rem; }
   .left_inside_text > p {
-    padding-bottom: 5rem; }
+    padding-bottom: 2rem; }
 
 .left_inside_img {
   flex: 1; }
@@ -247,8 +245,6 @@ header {
 
   .left_inside_text {
     text-align: start; }
-    .left_inside_text > h2 {
-      padding-bottom: 2rem; }
 
   .aboutUs_left_inside {
     flex-flow: row;

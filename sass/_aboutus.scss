@@ -29,9 +29,9 @@
   flex: 1;
   text-align: center;
  & > h2{
-   padding-bottom: 5rem;
+   padding-bottom: 2rem;
  }& > p{
-   padding-bottom: 5rem;
+   padding-bottom: 2rem;
  }
 }
 .left_inside_img{
@@ -54,9 +54,6 @@
   }
   .left_inside_text{
     text-align: start;
-   & > h2{
-    padding-bottom: 2rem;
-    }
   }
   .aboutUs_left_inside{
     flex-flow: row;
