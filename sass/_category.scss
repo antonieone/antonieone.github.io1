@@ -46,29 +46,31 @@
   flex-direction: column;
   gap: 1rem;
   margin: 0 auto;
- & > figure{
+ & > div{
    display: flex;
    flex-flow: column wrap;
    justify-content: center;
    position: relative;
    padding: 1rem;
- }& > figure > a{
+ }& > div > a{
    display: flex;
    justify-content: center;
    position: relative;
- }& > figure > a > img{
+ }& > div > a > img{
    max-width: 100%;
    flex: 1;
- }& > figure > figcaption {
+ }
+}
+.categoryText {
    align-self: center;
    position: absolute;
    display: flex;
    flex-direction: column;
    align-items: center;
- }& > figure > figcaption > h2,a{
+  & > h2,a{
    color: $white_color;
    @include adapCategFont;
- }& > figure > figcaption > a{
+ }& > a{
    font-size: 1.2rem;
  }
 }
@@ -87,10 +89,10 @@
    flex-direction: row;
    padding: 1rem;
    max-width: 80%;
-  & > figure{
+  & > div{
    flex: 1;
    padding: 0;
- }& > figure > a > img{
+ }& > div > a > img{
    flex: 1;
    -o-object-fit: cover;
       object-fit: cover;
