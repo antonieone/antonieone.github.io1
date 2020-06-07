@@ -5,7 +5,7 @@
   padding: 1rem 3rem;
   text-align: center;
   text-decoration: none;
-  color: $white_color;
+  color: $black_color;
 }
 @mixin adapFont{
   font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1920 - 320)));

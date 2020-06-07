@@ -1,0 +1,86 @@
+footer{
+  width: 100%;
+  background: $black_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 3rem 6rem;
+}
+.footerText{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.social{
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  & > li > a > i{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #564430;
+  }
+}
+.contactList{
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  & > li{
+    padding-top: 1rem;
+  }& > li > a {
+    text-decoration: none;
+    padding: 1rem;
+    color: $white_color;
+  }
+}
+.emailForm{
+  width: 100%;
+  padding-top: 3rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.email{
+  max-width: 75%;
+  flex: 1;
+  border: 0;
+  background: $black_color;
+  color: $white_color;
+  border-bottom: 1px solid $white_color;
+}
+.email:focus{
+  border-bottom-color: $beige_color;
+}
+.buttonFooter{
+  background: #564430;
+  color: white;
+  border: 0;
+  padding: .6rem 1rem;
+}
+.downFooter{
+  width: 100%;
+  padding-top: 3rem;
+  & > ul{
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: $white_color;
+ }& > ul > li{
+  padding:0 .5rem;
+ }& > ul > li > img{
+  height: 4.5vh;
+ }
+}
+
+@media (max-width:600px){
+  .downFooter > ul{
+    justify-content: space-around;
+   & > ul > li{
+    padding: 0;
+  }
+ }
+}

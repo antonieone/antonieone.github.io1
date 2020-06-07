@@ -31,7 +31,7 @@
     @include adapFont;
   }
 }
-.category > figure > a::before{
+.category > div > a::before{
   content: '';
   position: absolute;
   top: 0;
@@ -41,6 +41,11 @@
   background: #333;
   opacity: 0.5;
 }
+.category > div > a:hover{
+  background: #333;
+  opacity: 1;
+}
+
 .category{
   display: flex;
   flex-direction: column;
@@ -56,10 +61,15 @@
    display: flex;
    justify-content: center;
    position: relative;
+   background: #333;
+   opacity: 0.5;
  }& > div > a > img{
    max-width: 100%;
    flex: 1;
  }
+}
+.category > div > a:hover{
+  opacity: 1;
 }
 .categoryText {
    align-self: center;
@@ -72,8 +82,12 @@
    @include adapCategFont;
  }& > a{
    font-size: 1.2rem;
+   padding-top: 5rem;
+ }& > a:hover{
+
  }
 }
+
 
 @media only screen and (min-width: 1024px){
   .upper_category {
@@ -88,7 +102,7 @@
  .category {
    flex-direction: row;
    padding: 1rem;
-   max-width: 80%;
+   max-width: 70vw;
   & > div{
    flex: 1;
    padding: 0;

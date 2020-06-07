@@ -5,6 +5,7 @@
 }
 html,body{
   height: 100vh;
+  line-height: 2vh;
 }
 nav{
   position: relative;
@@ -17,33 +18,16 @@ header{
   width: 100%;
   height: 100vh;
   background: url(../images/header.jpg);
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-// .cover{
-//   position: absolute;
-//   left: 0;
-//   z-index: -1;
-//   background: url(../images/header.jpg);
-//   background-size: cover;
-//   width: 100%;
-//   height: 100%;
-// }
-/*.cover::before{ darkfone
-  content: "";
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}*/
-.nav_above{
+.navMain{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 2rem 1rem;
   width: 80%;
   margin: 0 auto;
   & > ul{
@@ -52,6 +36,7 @@ header{
   }& > ul > li{
    display: none;
    list-style: none;
+   padding: 2rem .5rem;
   }& > ul > li:last-child{
    display: block;
   }
@@ -65,13 +50,21 @@ header{
 .mobile_logo{
   font-size: 1.5rem;
   color: $beige_color;
+  & > span{
+    display: flex;
+    flex-flow: column;
+    background: $beige_color;
+    margin-bottom: 5px;
+    width: 1.8rem;
+    height: 3px;
+  }
 }
 header{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.header_text{
+.headerCenter{
   color: $white_color;
   text-align: center;
  & > h1{
@@ -92,31 +85,70 @@ header{
   }
 }
 @media only screen and (min-width: 1024px){
-  .header_text{
+  .headerCenter{
     align-self: flex-start;
     padding: 0 9rem;
     text-align: start;
   }
-  .nav_above > ul > li{
+  .navMain > ul > li{
     display: block;
     color: $white_color;
     padding-right: 2.5rem;
     position: relative;
   }
-  .nav_above > ul > li:first-child::before{
-    content: '\f107';
-    font-family: 'Font Awesome 5 Free';
-    position: absolute;
-    z-index: 1;
-    left: 2rem;
-    padding: 2px 7px;
-    color:#808080;
-    font-weight: 900;
+  .drop_down_menu > a{
+    color: $white_color;
+    text-decoration: none;
   }
-  .nav_above > ul > li:last-child{
+  .drop_down_menu > a > i{
+    transition: .5s;
+  }
+  .drop_down_menu:hover a > i{
+    transform: rotate(-180deg);
+  }
+  .drop_down_menu > ul{
+    display: none;
+    list-style:none;
+    position: relative;
+  }
+  .drop_down_menu:hover > ul{
+    background: $white_color;
+    display: flex;
+    flex-flow: column;
+    width: 150%;
+    position: absolute;
+    transform: translateY(3px);
+    z-index: 10;
+  }
+  .drop_down_menu:hover > ul > li{
+    transition: 1.5s;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  .drop_down_menu > ul > li:hover{
+    background: $beige_color;
+  }
+  .drop_down_menu> ul > li > a{
+      color: $black_color;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  // .navMain > ul > li:first-child::before{
+  //   content: '\f107';
+  //   font-family: 'Font Awesome 5 Free';
+  //   position: absolute;
+  //   z-index: 1;
+  //   left: 3rem;
+  //   padding: 2px 7px;
+  //   color:#808080;
+  //   font-weight: 900;
+  // }
+  .navMain > ul > li:last-child{
     display: none;
   }
-  .nav_above > ul > li:nth-child(8){
+  .navMain > ul > li:nth-child(8){
     padding-right: 0;
   }
   .search_icon > a,
