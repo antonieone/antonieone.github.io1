@@ -19,3 +19,6 @@
 @mixin adaptItemCardFont {
   font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
 }
+@mixin adapFontProductPage{
+  font-size: calc(16px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
+}
