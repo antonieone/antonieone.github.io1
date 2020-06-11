@@ -7,7 +7,7 @@ footer{
   flex-flow: column;
   padding: 3rem 6rem;
 }
-.footerText{
+.footer_text{
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -20,6 +20,8 @@ footer{
     font-size: 1.5rem;
     padding: 1rem;
     color: #564430;
+  }& > li > a > i:hover{
+    color: $beige_color;
   }
 }
 .contactList{

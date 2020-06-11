@@ -1,4 +1,5 @@
-.contactUs{
+
+.contact_us_inside{
   display: flex;
   flex-flow: column;
 }
@@ -15,7 +16,7 @@
        vertical-align: bottom;
   }
 }
-.inside_left_contact{
+.left_inside_contact{
   background: $beige_color;
   color: $black_color;
   position: absolute;
@@ -34,13 +35,13 @@
 }
 
 @media screen and (min-width:$minWidth) {
-  .contactUs{
+  .contact_us_inside{
     flex-flow: row;
   }
   .left_side_contact{
     justify-content: center;
   }
-  .inside_left_contact{
+  .left_inside_contact{
     position: absolute;
     transform: translateX(15rem);
     padding: 7rem 1rem;
