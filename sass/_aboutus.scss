@@ -29,6 +29,10 @@
    padding-bottom: 2rem;
  }& > p{
    padding-bottom: 2rem;
+ }& > a{
+   color: $black_color;
+ }& > a:hover{
+   color: $beige_color;
  }
 }
 .left_inside_img{

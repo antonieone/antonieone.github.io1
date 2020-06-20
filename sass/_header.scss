@@ -13,6 +13,34 @@ nav{
   flex-flow: column;
   background: $black_color;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
+ul{
+  list-style: none;
+}
+ul > li > a{
+   color: $white_color;
+  &:hover{
+   color:$beige_color;
+  }&:after{
+   content: '';
+   display: block;
+   background: $white_color;
+   width: 0;
+   height: 2px;
+   transition: .5s;
+ }&:hover:after{
+   width: 100%;
+ }
+}
+input[type='text']:focus{
+  border-bottom-color: $beige_color;
+}
+.logo:hover{
+  color:$beige_color;
+}
 .nav_main{
   position: relative;
   width: 80%;
@@ -27,17 +55,18 @@ nav{
     flex-flow: row;
   }& > ul > li{
    display: none;
-   list-style: none;
    padding: 2rem .5rem;
+   cursor: pointer;
   }& > ul > li:last-child{
    display: block;
-  }
+ }
 }
 .logo{
   text-decoration: none;
   color: $white_color;
   text-transform: uppercase;
   font-size: 1.2rem;
+  padding: 2rem 0;
 }
 .mobile_logo{
   font-size: 1.5rem;
@@ -61,6 +90,63 @@ header{
   background: url(../images/header.jpg);
   -o-object-fit: cover;
      object-fit: cover;
+}
+.hamburger_menu_list{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: $white_color;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 1s;
+  & > li{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+  }& > li::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: $black_color;
+    transition: .5s;
+  }& > li:hover::after{
+    width: 100%;
+  }& > li > a{
+    display: block;
+    color: $black_color;
+    font-weight: bold;
+  }& > li:not(:last-child){
+    margin-bottom: 1rem;
+  }
+}
+.menu_open .hamburger_menu_list{
+  opacity: 1;
+  transform: scale(1);
+}
+.hamburger_menu{
+  color: $beige_color;
+  font-size: 1.5rem;
+  position: relative;
+  cursor: pointer;
+  z-index: 150;
+}
+.hamburger_menu .fa-times{
+  display: none;
+}
+.menu_open .hamburger_menu .fa-times{
+  display: block;
+}
+.menu_open .hamburger_menu .fa-bars{
+  display: none;
 }
 .header_center{
   color: $white_color;
@@ -108,18 +194,18 @@ header{
     color: $white_color;
     padding-right: 2.5rem;
     position: relative;
- }
-  .nav_main > ul > li:last-child{
+  &:last-child{
     display: none;
-  }
-  .nav_main > ul > li:nth-child(8){
+  }&:nth-child(8){
     padding-right: 0;
    }
-
+}
+ .mobile_menu_hamburger{
+   display: none;
+ }
   .drop_down_menu > a{
     display: inline-block;
     color: $white_color;
-    text-decoration: none;
   }
   .border_bottom_hover::after{
     content: '';
@@ -134,7 +220,6 @@ header{
   }
   .drop_down_menu > ul{
     display: none;
-    list-style:none;
     position: relative;
   }
   .drop_down_menu:hover > ul{
@@ -151,15 +236,16 @@ header{
     padding: 1rem;
     text-align: center;
     cursor: pointer;
-  }
-  .drop_down_menu > ul > li:hover{
+  &:hover{
     background: $beige_color;
-  }
-  .drop_down_menu> ul > li > a{
+  }& > a{
       color: $black_color;
       text-decoration: none;
       text-transform: uppercase;
+  }& > a:hover::after{
+    width: 0;
   }
+ }
   .nav_main > ul > li:first-child::before{
     content: '\f0dd';
     font-family: 'Font Awesome 5 Free';

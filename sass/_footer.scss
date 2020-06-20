@@ -22,6 +22,8 @@ footer{
     color: #564430;
   }& > li > a > i:hover{
     color: $beige_color;
+  }& > li > a:hover:after{
+    width: 0;
   }
 }
 .contactList{
@@ -30,11 +32,7 @@ footer{
   flex-flow: row wrap;
   justify-content: center;
   & > li{
-    padding-top: 1rem;
-  }& > li > a {
-    text-decoration: none;
     padding: 1rem;
-    color: $white_color;
   }
 }
 .emailForm{
@@ -52,14 +50,15 @@ footer{
   color: $white_color;
   border-bottom: 1px solid $white_color;
 }
-.email:focus{
-  border-bottom-color: $beige_color;
-}
 .buttonFooter{
   background: #564430;
   color: white;
   border: 0;
   padding: .6rem 1rem;
+  &:hover{
+    background: $beige_color;
+    cursor: pointer;
+  }
 }
 .downFooter{
   width: 100%;

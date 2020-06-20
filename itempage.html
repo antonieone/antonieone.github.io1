@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   </head>
   <body>
-    <nav class="nav">
-      <div class="nav_main">
-        <a href="#" class="logo">Ave Maria</a>
+    <section class="item_page">
+      <nav class="nav pageitem_nav">
+        <div class="nav_main nav_item">
+        <a href="index.html" class="logo">Ave Maria</a>
         <ul class="desktop_menu">
           <li class="drop_down_menu">
             <a href="#" class="border_bottom_hover">
               Shop
             </a>
-            <ul class="">
+            <ul>
               <li><a href="#">shop</a></li>
               <li><a href="#">shop</a></li>
               <li><a href="#">shop</a></li>
@@ -67,107 +67,54 @@
             </ul>
           </ul>
         </ul>
-      </div>
-    </nav>
-    <header>
-      <div class="header_center">
-        <h1>Ave Maria</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor.</p>
-          <a href="#" class="button">Shop now</a>
-      </div>
-    </header>
-    <section class="category_head">
-      <div class="upper_category">
-        <h1>Shop by Caregory</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor.</p>
-      </div>
-      <div class="category">
-          <a href="item_wrapper">
-            <div class="category_item_img">
-              <img src="images/earings.jpg" alt="">
-            </div>
-            <h5 class="category_text">
-              <span>Gold Jewellery</span>
-              <span>Shop Gold</span>
-            </h5>
-          </a>
-          <a href="item_wrapper">
-            <div class="category_item_img">
-              <img src="images/category.jpg" alt="">
-            </div>
-            <h5 class="category_text">
-              <span>Silver Jewellery</span>
-              <span>Shop Silver</span>
-            </h5>
-          </a>
-          <a href="item_wrapper">
-            <div class="category_item_img">
-              <img src="images/category.jpg" alt="">
-            </div>
-            <h5 class="category_text">
-              <span>Giftware</span>
-              <span>Shop Giftware</span>
-            </h5>
-          </a>
-      </div>
-      <div class="slider_buttons main_page_button">
-        <div class="buttons_footer">
+      </div></nav>
+      <div class="product_item">
+        <div class="small_item_img">
           <ul>
-            <li class="numbers_counter">
-              <span>1</span>
-              <span>/2</span>
-            </li>
-            <li>
-              <ul class="active_n_dont_buttons">
-                <li>
-                  <button type="button" name="button" class="active"></button>
-                  <button type="button" name="button" class="non_active"></button>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="buttons_arrows">
-                <li>
-                  <i class="fas fa-caret-left"></i>
-                </li>
-                <li>
-                  <i class="fas fa-caret-right"></i>
-                </li>
-              </ul>
-            </li>
+              <li>
+                <a href="#">
+                  <img src="images/category.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/earings.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/category.jpg" alt="">
+                </a>
+              </li>
           </ul>
         </div>
-      </div>
-    </section>
-    <section class="aboutUs">
-        <div class="about_us_head">
-          <div class="about_us_left">
-            <div class="about_us_left_inside">
-              <div class="left_inside_text">
-                <h2>Ave Maria Jewellery</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  Duis aute irure dolor in reprehenderit in voluptate velit
-                  esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat non proident,
-                  sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <a href="#">Read More About Us</a>
-              </div>
-              <div class="left_inside_img">
-                <img src="images/aboutus_left.jpg" alt="">
-              </div>
-            </div>
+        <div class="big_item_img">
+          <img src="images/earings.jpg" alt="">
+        </div>
+        <div class="description_img">
+          <h3>Silver Ring With Stone</h3>
+          <span class="favorite">
+            <a href="#">Add to Wishlist</a>
+          </span>
+          <div class="product_option">
+            <input type="text" name="" value="" placeholder="Quantity">
+            <select class="" name="" placeholder="" value="">
+              <option value="value1">13</option>
+              <option value="value2">14</option>
+              <option value="value3">15</option>
+            </select>
+            <button type="button" name="button" class="add_to_cart">Add to Cart</button>
           </div>
-          <div class="about_us_right">
-            <img src="images/aboutus.jpg" alt="">
+          <div class="description_item">
+            <h5>Details & Description</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.</p>
+              <span>Silver ring with round briliant</span>
           </div>
         </div>
+      </div>
     </section>
     <section class="discover_new_collection">
       <div class="discover_nc_head">
@@ -192,7 +139,7 @@
             </a>
             <div class="info_item">
               <p id="name_item">Silver Earings</p>
-              <span id="price_item">$ 240 </span>
+              <span id="price_item">$ 240 fdsfsdfsdfsfd</span>
             </div>
           </div>
         </div>
@@ -243,32 +190,6 @@
               </ul>
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
-    <section class="contact_us">
-      <div class="contact_us_inside">
-        <div class="left_side_contact">
-          <div class="left_inside_contact">
-            <h1>Contact Us</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit, sed do eiusmod tempor.
-            </p>
-            <p class="adress"></p>
-            <p class="phone_number">Phone Number: 2122 5104</p>
-            <div class="time_work">
-              <p>Monday-Friday: 9am-6pm</p>
-              <p>Saturday: 9am-1pm</p>
-              <p>Sunday: Closed</p>
-            </div>
-          </div>
-          <img src="images/map_left.jpg" alt="">
-        </div>
-        <div class="right_side_map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9934.156595148963!2d-0.119543!3d51.503324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4291f3172409ea92!2z0JvQvtC90LTQvtC90YHQutC40Lkg0JPQu9Cw0Lc!5e0!3m2!1sru!2suk!4v1590598228009!5m2!1sru!2suk"
-          width="100%" height="100%" frameborder="0" style="border:0;"
-          allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </div>
     </section>
