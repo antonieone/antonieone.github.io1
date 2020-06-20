@@ -33,20 +33,15 @@
   flex: 1;
   border: 1px solid $grey_outer_color;
   padding: 1rem;
-  max-width: 100%;
   transition: 1s;
+  display: flex;
+  flex-flow: column;
    &:hover{
      border: 1px solid $white_color;
    }& > a{
-     display: block;
-     position: relative;
-     padding-bottom: 100%;
-     overflow: hidden;
+     flex: 1;
    }
    & > a > img{
-     position: absolute;
-     top:0;
-     left:0;
      height: 100%;
      width: 100%;
      -o-object-fit: cover;
@@ -57,6 +52,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding-top: 1rem;
 }
 
 #name_item,
