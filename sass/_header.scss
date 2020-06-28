@@ -7,6 +7,16 @@ html,body{
   height: 100vh;
   line-height: 2vh;
 }
+
+select{
+  /* for Firefox */ /*remove arrow*/
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+ &::-ms-expand {
+    display: none;
+ }
+}
 nav{
   position: relative;
   display: flex;

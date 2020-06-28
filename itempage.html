@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   </head>
   <body>
@@ -70,7 +71,7 @@
       </div></nav>
       <div class="product_item">
         <div class="small_item_img">
-          <ul>
+          <ul class="small_product_img">
               <li>
                 <a href="#">
                   <img src="images/category.jpg" alt="">
@@ -97,12 +98,21 @@
             <a href="#">Add to Wishlist</a>
           </span>
           <div class="product_option">
-            <input type="text" name="" value="" placeholder="Quantity">
-            <select class="" name="" placeholder="" value="">
-              <option value="value1">13</option>
-              <option value="value2">14</option>
-              <option value="value3">15</option>
-            </select>
+            <div class="quantity_up_down">
+              <input type="text" name="" value="" placeholder="Quantity" id="quantity">
+              <div class="button_up_down">
+                <label for="button"><i class="fas fa-plus"></i></label>
+                <input name="" value="1" id="button">
+                <label for="button"><i class="fas fa-minus"></i></label>
+              </div>
+            </div>
+            <div class="custom_select">
+              <select  name="" placeholder="" value="">
+                <option value="value1">13</option>
+                <option value="value2">14</option>
+                <option value="value3">15</option>
+              </select>
+            </div>
             <button type="button" name="button" class="add_to_cart">Add to Cart</button>
           </div>
           <div class="description_item">
