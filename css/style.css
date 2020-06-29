@@ -533,7 +533,7 @@ header {
   display: flex;
   flex-flow: column;
   margin: 0 auto;
-  gap: 1rem;
+  grid-gap: 1rem;
   padding: 1rem; }
   .category > a {
     position: relative;
