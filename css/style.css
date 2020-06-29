@@ -1,9 +1,30 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 html {
   height: 100vh;
   line-height: 2vh;
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+ul {
+  list-style: none; }
+
+select {
+  /* for Firefox */
+  /*remove arrow*/
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none; }
+  select::-ms-expand {
+    display: none; }
 
 /* Sections
    ========================================================================== */
@@ -232,32 +253,17 @@ template {
 [hidden] {
   display: none; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-select {
-  /* for Firefox */
-  /*remove arrow*/
-  -moz-appearance: none;
-  /* for Chrome */
-  -webkit-appearance: none; }
-  select::-ms-expand {
-    display: none; }
-
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 nav {
   position: relative;
   display: flex;
   flex-flow: column;
   background: #000; }
-
-a {
-  text-decoration: none;
-  color: white; }
-
-ul {
-  list-style: none; }
 
 ul > li > a {
   color: #FFF; }
@@ -494,6 +500,12 @@ header {
   .likes_icon > a,
   .cart_icon > a {
     color: #FFF; } }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 .main_page_button {
   width: 80%;
   margin: 0 auto;
@@ -647,6 +659,12 @@ header {
       flex: 1;
       -o-object-fit: cover;
       object-fit: cover; } }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 .about_us_head {
   display: flex;
   flex-flow: column; }
@@ -707,6 +725,12 @@ header {
   .left_inside_img > img {
     max-width: 100%;
     transform: translateX(13rem); } }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 .discover_new_collection {
   background: #000;
   padding-bottom: 5rem; }
@@ -781,6 +805,12 @@ header {
     flex-flow: row; }
     .buttons_footer > ul > ul > li {
       padding: 0; } }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 .contact_us_inside {
   display: flex;
   flex-flow: column; }
@@ -825,6 +855,12 @@ header {
     transform: translateX(15rem);
     padding: 7rem 1rem;
     text-align: inherit; } }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 footer {
   width: 100%;
   background: #000;
@@ -904,14 +940,24 @@ footer {
     justify-content: space-around; }
     .downFooter > ul > ul > li {
       padding: 0; } }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 .item_page {
+  display: -ms-grid;
   display: grid;
   grid-template-rows: repeat(4, -webkit-max-content);
+  -ms-grid-rows: -webkit-max-content [4];
+  -ms-grid-rows: max-content [4];
   grid-template-rows: repeat(4, max-content);
   background: #000;
   padding-bottom: 5rem; }
 
 .pageitem_nav {
+  -ms-grid-row: 1;
   grid-row: 1;
   padding: 0 1rem; }
 
@@ -919,13 +965,18 @@ footer {
   width: 100%; }
 
 .product_item {
+  -ms-grid-row: 2;
   grid-row: 2;
+  display: -ms-grid;
   display: grid;
   grid-template-rows: repeat(3, -webkit-max-content);
+  -ms-grid-rows: -webkit-max-content 1rem -webkit-max-content 1rem -webkit-max-content;
+  -ms-grid-rows: max-content 1rem max-content 1rem max-content;
   grid-template-rows: repeat(3, max-content);
   grid-row-gap: 1rem; }
 
 .small_item_img {
+  -ms-grid-row: 1;
   grid-row: 1; }
 
 .small_product_img {
@@ -945,6 +996,7 @@ footer {
     object-fit: cover; }
 
 .big_item_img {
+  -ms-grid-row: 2;
   grid-row: 2;
   position: relative; }
   .big_item_img > img {
@@ -954,6 +1006,7 @@ footer {
     object-fit: cover; }
 
 .description_img {
+  -ms-grid-row: 3;
   grid-row: 3;
   gap: 1rem;
   padding: 0 2rem; }
@@ -1082,14 +1135,17 @@ input[type='text'] {
 
 @media screen and (min-width: 1024px) {
   .item_page {
+    -ms-grid-columns: 15vw 1fr 15vw;
     grid-template-columns: 15vw 1fr 15vw; }
 
   .product_item {
+    -ms-grid-columns: 5vw 1rem minmax(250px, 1fr) 1rem 1fr;
     grid-template-columns: 5vw minmax(250px, 1fr) 1fr;
     grid-column-gap: 1rem;
     padding: 0; }
 
   .small_item_img {
+    -ms-grid-row: 1;
     grid-row: 1;
     grid-column: 1 / -3; }
     .small_item_img > ul {
@@ -1102,6 +1158,7 @@ input[type='text'] {
       padding: 0; }
 
   .big_item_img {
+    -ms-grid-row: 1;
     grid-row: 1;
     grid-column: 2 / -2; }
     .big_item_img > img {
@@ -1112,6 +1169,7 @@ input[type='text'] {
     grid-column: 2 / -2; }
 
   .description_img {
+    -ms-grid-row: 1;
     grid-row: 1;
     grid-column: 3 / -1; } }
 
