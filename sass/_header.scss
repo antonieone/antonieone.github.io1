@@ -1,34 +1,9 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html,body{
-  height: 100vh;
-  line-height: 2vh;
-}
 
-select{
-  /* for Firefox */ /*remove arrow*/
-  -moz-appearance: none;
-  /* for Chrome */
-  -webkit-appearance: none;
- &::-ms-expand {
-    display: none;
- }
-}
 nav{
   position: relative;
   display: flex;
   flex-flow: column;
   background: $black_color;
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-ul{
-  list-style: none;
 }
 ul > li > a{
    color: $white_color;
