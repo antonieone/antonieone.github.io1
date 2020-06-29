@@ -757,6 +757,7 @@ header {
   flex-flow: column; }
 
 .wrap_both_item {
+  padding: 1rem;
   flex-flow: row;
   flex: 1; }
 
