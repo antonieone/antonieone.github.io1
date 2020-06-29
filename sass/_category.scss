@@ -33,10 +33,10 @@
   display: flex;
   flex-flow: column;
   margin: 0 auto;
-  grid-gap: 1rem;
   // gap: 1rem;
   padding: 1rem;
  & > a{
+   margin: 1rem 0;
    position: relative;
    display: flex;
    flex-flow: column wrap;
