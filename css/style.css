@@ -253,12 +253,6 @@ template {
 [hidden] {
   display: none; }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 nav {
   position: relative;
   display: flex;
@@ -500,12 +494,6 @@ header {
   .likes_icon > a,
   .cart_icon > a {
     color: #FFF; } }
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 .main_page_button {
   width: 80%;
   margin: 0 auto;
@@ -553,13 +541,16 @@ header {
   .category > a:hover::before {
     opacity: 0; }
 
-.category_item_img > img {
-  position: relative;
-  width: 100%;
+.category_item_img {
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  z-index: -2; }
+  width: 100%; }
+  .category_item_img > img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: -2; }
 
 .category_text {
   align-self: center;
@@ -570,10 +561,10 @@ header {
   z-index: 1; }
   .category_text > h2, .category_text span {
     color: #FFF;
-    font-size: calc(22px + (42 - 22) * ((100vw - 320px) / (1920 - 320))); }
+    font-size: calc(20px + (38 - 20) * ((100vw - 320px) / (1920 - 320))); }
   .category_text > span:first-child {
     border-bottom: none;
-    font-size: calc(22px + (42 - 22) * ((100vw - 320px) / (1920 - 320))); }
+    font-size: calc(20px + (38 - 20) * ((100vw - 320px) / (1920 - 320))); }
   .category_text > span {
     font-size: 1.2rem;
     padding-top: 5rem;
@@ -653,18 +644,11 @@ header {
     max-width: 70vw; }
     .category > a {
       flex: 1;
-      padding: 0;
-      flex-flow: wrap; }
+      margin: 0 .5rem; }
     .category > a > img {
       flex: 1;
       -o-object-fit: cover;
       object-fit: cover; } }
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 .about_us_head {
   display: flex;
   flex-flow: column; }
@@ -725,12 +709,6 @@ header {
   .left_inside_img > img {
     max-width: 100%;
     transform: translateX(13rem); } }
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 .discover_new_collection {
   background: #000;
   padding-bottom: 5rem; }
@@ -799,6 +777,9 @@ header {
     max-width: 70vw;
     margin: 0 auto; }
 
+  .wrap_both_item {
+    padding: 0; }
+
   .info_item {
     align-items: start; }
 
@@ -806,12 +787,6 @@ header {
     flex-flow: row; }
     .buttons_footer > ul > ul > li {
       padding: 0; } }
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 .contact_us_inside {
   display: flex;
   flex-flow: column; }
@@ -856,12 +831,6 @@ header {
     transform: translateX(15rem);
     padding: 7rem 1rem;
     text-align: inherit; } }
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 footer {
   width: 100%;
   background: #000;
@@ -941,12 +910,6 @@ footer {
     justify-content: space-around; }
     .downFooter > ul > ul > li {
       padding: 0; } }
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 .item_page {
   display: -ms-grid;
   display: grid;
