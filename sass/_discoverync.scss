@@ -1,16 +1,16 @@
 .discover_new_collection{
-  background: $black_color;
   padding-bottom: 5rem;
+  background: $black_color;
 }
 .discover_nc_head{
-  background: $black_color;
-  max-width: 100%;
-  margin: 0 auto;
-  transform: translateY(-3rem);
   display: flex;
   justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: $black_color;
+  transform: translateY(-3rem);
   & > p{
     display: none;
     color: $white_color;
@@ -32,11 +32,11 @@
 }
 .card_item{
   flex: 1;
-  border: 1px solid $grey_outer_color;
-  padding: 1rem;
-  transition: 1s;
   display: flex;
   flex-flow: column;
+  padding: 1rem;
+  border: 1px solid $grey_outer_color;
+  transition: 1s;
    &:hover{
      border: 1px solid $white_color;
    }& > a{
@@ -51,15 +51,15 @@
 }
 .info_item{
   display: flex;
+  padding-top: 1rem;
   flex-flow: column;
   align-items: center;
-  padding-top: 1rem;
 }
 
-#name_item,
-#price_item{
-  color: $white_color;
+.name_item,
+.price_item{
   padding-bottom: .5rem;
+  color: $white_color;
   font-size: 1rem;
 }
 

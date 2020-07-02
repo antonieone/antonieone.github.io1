@@ -2,18 +2,18 @@
   @include slider_buttons_main_page;
 }
 .category_head{
-  background: $black_color;
   position: relative;
   padding-bottom: 5rem;
+  background: $black_color;
 }
 .upper_category{
-  background: $beige_color;
-  margin: 0 auto;
-  transform: translateY(-3rem);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  margin: 0 auto;
+  background: $beige_color;
+  transform: translateY(-3rem);
   & > p{
     display: none;
   }
@@ -27,21 +27,21 @@
   margin: 0 auto;
   padding: 1rem;
  & > a{
-   margin: 1rem 0;
    position: relative;
+   z-index: 0;
    display: flex;
    flex-flow: column wrap;
    justify-content: center;
-   z-index: 0;
+   margin: 1rem 0;
  }
  & > a::before{
   content: '';
   position: absolute;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background: #333;
   opacity: 0.5;
-  z-index: -1;
   transition: 1s;
  }
  & > a:hover::before{
@@ -49,11 +49,9 @@
  }
 }
 .category_item_img{
+  z-index: -2;
   flex: 1;
 	height: 35vh;
-  // background-size: cover;
-	// background-position: 50%;
-  z-index: -2;
  & > img{
   position: relative;
   width: 100%;
@@ -65,12 +63,12 @@
 
 
 .category_text{
-   align-self: center;
    position: absolute;
+   z-index: 1;
    display: flex;
    flex-direction: column;
    align-items: center;
-   z-index: 1;
+   align-self: center;
   & > h2,span{
    color: $white_color;
    @include adapCategFont;
@@ -80,18 +78,18 @@
    @include adapCategFont;
  }
  & > span{
-   font-size: 1.2rem;
-   padding-top: 3rem;
-   border-bottom: 1px solid $white_color;
    position: relative;
+   padding-top: 3rem;
    padding-right: 1rem;
+   font-size: 1.2rem;
+   border-bottom: 1px solid $white_color;
  }
  & > span:before{
    content: '\f0da';
-   font-family: 'Font Awesome 5 Free';
-   font-weight: 900;
    position: absolute;
    right: 0;
+   font-family: 'Font Awesome 5 Free';
+   font-weight: 900;
    font-size: .8rem;
  }
 }
@@ -105,8 +103,8 @@
  }
 }
 .numbers_counter > span{
-  color: $white_color;
   font-size: 1.5rem;
+  color: $white_color;
 }
 .active_n_dont_buttons > li{
   display: flex;
@@ -147,9 +145,9 @@
   color: $white_color;
   }
   & > li > i{
+  padding: .8rem 1rem;
   font-size: 1rem;
   color: $beige_color;
-  padding: .8rem 1rem;
 }
 }
 @media only screen and (min-width: 989px){

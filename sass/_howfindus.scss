@@ -16,11 +16,11 @@
   }
 }
 .left_inside_contact{
+  position: absolute;
+  padding: 1rem;
+  text-align: center;
   background: $beige_color;
   color: $black_color;
-  position: absolute;
-  text-align: center;
-  padding: 1rem;
   & > h1{
     padding-bottom: $paddingContactText;
   }& > p{
@@ -42,8 +42,8 @@
   }
   .left_inside_contact{
     position: absolute;
-    transform: translateX(15rem);
     padding: 7rem 1rem;
     text-align: inherit;
+    transform: translateX(15rem);
   }
 }

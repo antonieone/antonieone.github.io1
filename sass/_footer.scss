@@ -1,11 +1,11 @@
 footer{
-  width: 100%;
-  background: $black_color;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  padding: 3rem 6rem;
+  width: 100%;
+  margin: 3rem 6rem;
+  background: $black_color;
 }
 .footer_text{
   display: flex;
@@ -13,12 +13,11 @@ footer{
   flex-flow: column;
 }
 .social{
-  list-style: none;
   display: flex;
   flex-flow: row wrap;
   & > li > a > i{
-    font-size: 1.5rem;
     padding: 1rem;
+    font-size: 1.5rem;
     color: #564430;
   }& > li > a > i:hover{
     color: $beige_color;
@@ -27,7 +26,6 @@ footer{
   }
 }
 .contactList{
-  list-style: none;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -36,25 +34,25 @@ footer{
   }
 }
 .emailForm{
-  width: 100%;
-  padding-top: 3rem;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  width: 100%;
+  padding-top: 3rem;
 }
 .email{
   max-width: 75%;
   flex: 1;
   border: 0;
-  background: $black_color;
   color: $white_color;
+  background: $black_color;
   border-bottom: 1px solid $white_color;
 }
 .buttonFooter{
+  padding: .6rem 1rem;
   background: #564430;
   color: white;
   border: 0;
-  padding: .6rem 1rem;
   &:hover{
     background: $beige_color;
     cursor: pointer;
@@ -64,7 +62,6 @@ footer{
   width: 100%;
   padding-top: 3rem;
   & > ul{
-  list-style: none;
   display: flex;
   flex-flow: row wrap;
   align-items: center;

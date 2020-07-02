@@ -6,8 +6,8 @@
   -ms-grid-rows: (-webkit-max-content)[4];
   -ms-grid-rows: (max-content)[4];
   grid-template-rows: repeat(4, max-content);
+  margin-bottom: 5rem;
   background: $black_color;
-  padding-bottom: 5rem;
 }
 .pageitem_nav{
   -ms-grid-row: 1;
@@ -119,16 +119,16 @@
   justify-content: flex-end;
 }
 .button_up_down{
-  align-self: center;
   position: absolute;
-  display: flex;
   right: 1rem;
+  display: flex;
+  align-self: center;
 }
 .fa-plus,
 .fa-minus{
+  position: absolute;
   font-size: .8rem;
   color: $white_color;
-  position: absolute;
   cursor: pointer;
 }
 .fa-minus:hover,
@@ -136,22 +136,22 @@
   color: $beige_color;
 }
 #button{
+  padding-left: 1.7rem;
+  width: 5vh;
   border: none;
   background-color: $black_color;
   color: $white_color;
-  padding-left: 1.7rem;
-  width: 5vh;
 }
 .custom_select > select{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
   padding-top: 1rem;
   border: none;
   border-bottom: 1px solid $white_color;
   background: $black_color;
   color: white;
   -webkit-appearance: none;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
 }
 .description_item{
   display: flex;
@@ -176,26 +176,26 @@ input[type = 'text']{
   color:$white_color;
 }
 .add_to_cart{
-  width: 100%;
-  margin-top:1rem;
-  border: none;
-  color: $white_color;
-  background: #564430;
   position: relative;
-  padding: .6rem;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-top:1rem;
+  padding: .6rem;
+  border: none;
+  color: $white_color;
+  background: #564430;
+  cursor: pointer;
   &::before{
     content: '\f290';
     position: absolute;
+    z-index: 1;
+    right: 1rem;
+    font-size: 1rem;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: $white_color;
-    font-size: 1rem;
-    z-index: 1;
-    right: 1rem;
   }
   &:hover{
     background: $beige_color;

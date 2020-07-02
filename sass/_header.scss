@@ -1,8 +1,8 @@
 nav{
-  width: 100%;
   position: fixed;
   z-index: 999;
   display: flex;
+  width: 100%;
   flex-flow: column;
   background: $black_color;
 }
@@ -13,9 +13,9 @@ ul > li > a{
   }&:after{
    content: '';
    display: block;
-   background: $white_color;
    width: 0;
    height: 2px;
+   background: $white_color;
    transition: .5s;
  }&:hover:after{
    width: 100%;
@@ -29,9 +29,9 @@ input[type='text']:focus{
 }
 .nav_main{
   position: relative;
+  display: flex;
   width: 80%;
   margin: 0 auto;
-  display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
@@ -48,29 +48,30 @@ input[type='text']:focus{
  }
 }
 .logo{
-  text-decoration: none;
-  color: $white_color;
-  text-transform: uppercase;
-  font-size: 1.2rem;
   padding: 2rem 0;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white_color;
 }
 .mobile_logo{
   font-size: 1.5rem;
   color: $beige_color;
   & > span{
     display: flex;
-    flex-flow: column;
-    background: $beige_color;
-    margin-bottom: 5px;
     width: 1.8rem;
     height: 3px;
+    flex-flow: column;
+    margin-bottom: 5px;
+    background: $beige_color;
   }
 }
 header{
+  position: relative;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  position: relative;
   width: 100%;
   height: 100vh;
   background: url(../images/header.jpg);
@@ -81,21 +82,21 @@ header{
   position: fixed;
   top:0;
   left: 0;
-  width: 100%;
-  height: 100vh;
-  background: $white_color;
+  z-index: 10;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  background: $white_color;
   opacity: 0;
   transform: scale(0);
   transition: opacity 1s;
   & > li{
+    padding: 1rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    padding: 1rem;
     cursor: pointer;
   }& > li::after{
     content: '';
@@ -141,17 +142,17 @@ header{
   @include adapHeaderFont;
   padding: 1rem 0;
  }& > p{
-  font-size: 1rem;
   padding: 2rem;
+  font-size: 1rem;
  }
 }
 .button{
   @include button;
+  position: relative;
+  z-index: 1;
   text-transform: uppercase;
   font-weight: bold;
   transition: 1s;
-  position: relative;
-  z-index: 1;
   &::before{
     content: '';
     position: absolute;
@@ -168,18 +169,18 @@ header{
 }
 @media only screen and (min-width: 1024px){
   .header_center{
-    align-self: flex-start;
     padding: 0 9rem;
+    align-self: flex-start;
     text-align: start;
    & > p{
     padding: 2rem 0;
    }
  }
   .nav_main > ul > li{
-    display: block;
-    color: $white_color;
-    padding-right: 2.5rem;
     position: relative;
+    display: block;
+    padding-right: 2.5rem;
+    color: $white_color;
   &:last-child{
     display: none;
   }&:nth-child(8){
@@ -197,30 +198,30 @@ header{
     content: '';
     display: block;
     width: 0;
-    background: $white_color;
     height: 2px;
+    background: $white_color;
     transition: width .3s;
   }
   .border_bottom_hover:hover::after{
     width: 100%;
   }
   .drop_down_menu > ul{
-    display: none;
     position: relative;
+    display: none;
   }
   .drop_down_menu:hover > ul{
-    background: $white_color;
+    position: absolute;
+    z-index: 1;
     display: flex;
     flex-flow: column;
     width: 150%;
-    position: absolute;
+    background: $white_color;
     transform: translateY(2rem);
-    z-index: 1;
   }
   .drop_down_menu:hover > ul > li{
-    transition: 1s;
     padding: 1rem;
     text-align: center;
+    transition: 1s;
     cursor: pointer;
   &:hover{
     background: $beige_color;
@@ -234,11 +235,11 @@ header{
  }
   .nav_main > ul > li:first-child::before{
     content: '\f0dd';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
     position: absolute;
     z-index: 1;
     left: 3rem;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     color:#808080;
   }
   .search_icon > a,
