@@ -840,7 +840,7 @@ footer {
   align-items: center;
   flex-flow: column;
   width: 100%;
-  margin: 3rem 6rem;
+  padding: 3rem 6rem;
   background: #000; }
 
 .footer_text {
