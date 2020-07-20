@@ -337,7 +337,7 @@ a:hover {
   background: #000; }
   .products__title {
     background: #ECBA82; }
-    .products__title > h1 {
+    .products__title > h2 {
       color: #000; }
   .products__column {
     margin: 4rem 0;
