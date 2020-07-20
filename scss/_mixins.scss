@@ -1,0 +1,43 @@
+@mixin flexStyle($alingItems, $justifyContent, $direction) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alingItems;
+  flex-flow: $direction;
+}
+@mixin fontStyle($size, $color) {
+  font-size: $size;
+  font-family: 'Fondamento', cursive;
+  font-style: normal;
+  color: $color;
+}
+@mixin img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@mixin button {
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid $black_color;
+  color: $black_color;
+}
+@mixin adapFont{
+  font-size: calc(17px + (30 - 17) * ((100vw - 320px) / (1920 - 320)));
+}
+@mixin adapHeaderFont {
+  font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (1920 - 320)));
+}
+
+@mixin slider_buttons_main_page {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}

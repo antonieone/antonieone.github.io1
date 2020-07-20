@@ -1,0 +1,38 @@
+.contactUs__section,
+.contactUs__description{
+  @include flexStyle(center, center, row);
+}
+.contactUs{
+  &__description{
+    position: relative;
+    width: 100%;
+    flex: 0 0 50%;
+    min-height: 650px;
+    overflow: hidden;
+    & > img{
+      @include img;
+    }
+  }&__title{
+    position: absolute;
+    z-index: 1;
+    padding: 1rem;
+    text-align: center;
+    background: $beige_color;
+    & > h1{
+      @include fontStyle(1rem, $black_color);
+    }& > p{
+      @include fontStyle(1rem, $black_color);
+    }
+  }
+}
+#map{
+  height: 70vh;
+  width: 100%;
+  flex: 0 0 50%;
+  overflow: hidden;
+}
+@media screen and (max-width: $tablet) {
+  .contactUs__section{
+    flex-flow: column;
+  }
+}

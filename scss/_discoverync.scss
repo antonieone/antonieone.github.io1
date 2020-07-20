@@ -1,0 +1,52 @@
+.discoverNC{
+  background: $black_color;
+}
+.discoverNC__title{
+  background: $black_color;
+}
+.discoverNC{
+  &__column{
+    @include flexStyle(center, center, row);
+    margin: 4rem 0;
+    padding: 1rem;
+  }&__links{
+    flex: 1;
+    @include flexStyle(center, center, row);
+    width: 100%;
+  }&__item{
+    flex: 1;
+    @include flexStyle(normal, normal, column);
+    padding: 1rem;
+    border: 1px solid $grey_outer_color;
+    transition: 1s;
+    &:hover{
+      border: 1px solid $white_color;
+    }
+  }&__infoItem{
+    @include flexStyle(center, center, column);
+    padding-top: 1rem;
+  }
+}
+
+.image{
+  position: relative;
+  width: 100%;
+  min-height: 150px;
+  padding-bottom: 100%;
+  overflow: hidden;
+  & > img{
+    @include img;
+   }
+}
+.discoverNC__nameItem,
+.discoverNC__priceItem{
+  @include fontStyle(1rem, $white_color);
+  padding-bottom: .5rem;
+}
+
+
+@media screen and (max-width: $tablet) {
+   .discoverNC__column{
+     flex-flow: column;
+   }
+}

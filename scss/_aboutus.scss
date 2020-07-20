@@ -1,0 +1,44 @@
+.aboutUs__container,
+.aboutUs__title{
+  @include flexStyle(center, center, row);
+}
+.aboutUs{
+  background: #E5E5E5;
+  &__description{
+    display: inherit;
+    flex: 0 0 50%;
+  }&__title{
+    padding: 2rem;
+  }&__subtitle{
+    @include fontStyle(1rem, $black_color);
+    text-align: center;
+    & > h2{
+      padding-bottom: 2rem;
+    }& > p{
+      padding-bottom: 2rem;
+    }& > a{
+      border-bottom: 1px solid $black_color;
+      text-transform: uppercase;
+      color: $black_color;
+    }& > a:hover{
+      color: $beige_color;
+    }
+  }&__image{
+    position: relative;
+    width: 100%;
+    flex: 0 0 50%;
+    min-height: 700px;
+    overflow: hidden;
+    & > img{
+      @include img;
+      right: 0;
+    }
+  }
+}
+
+
+@media only screen and (max-width: $tablet){
+  .aboutUs__container{
+    flex-flow: column;
+  }
+}

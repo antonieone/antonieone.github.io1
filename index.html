@@ -3,149 +3,148 @@
   <head>
     <meta charset="utf-8">
     <title>Ave Maria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   </head>
   <body>
+<!-- NAV_MENU START -->
     <nav class="nav">
-      <div class="nav_main">
+      <div class="nav__container">
         <a href="#" class="logo">Ave Maria</a>
-        <ul class="desktop_menu">
-          <li class="drop_down_menu">
-            <a href="#" class="border_bottom_hover">
-              Shop
-            </a>
-            <ul class="">
-              <li><a href="#">shop</a></li>
-              <li><a href="#">shop</a></li>
-              <li><a href="#">shop</a></li>
-            </ul>
+        <ul class="nav__menu">
+          <li class="nav__item item--hover">
+            <a href="#">Home</a>
           </li>
-          <li>
+          <li class="nav__item">
             <a href="#">About</a>
           </li>
-          <li>
-            <a href="#">Engravings</a>
-          </li>
-          <li>
+          <li class="nav__item">
             <a href="#">Repairs</a>
           </li>
-          <li>
+          <li class="nav__item">
             <a href="#">Contact</a>
           </li>
-          <li class="search_icon">
+          <li class="nav__item search_icon">
             <a href="#"><i class="fas fa-search"></i></a>
           </li>
-          <li class="likes_icon">
+          <li class="nav__item likes_icon">
             <a href="#"><i class="far fa-heart"></i></a>
           </li>
-          <li class="cart_icon">
+          <li class="nav__item cart_icon">
             <a href="#"><i class="fas fa-shopping-bag"></i></a>
           </li>
-          <div class="mobile_menu_hamburger">
-            <div class="hamburger_menu">
-              <i class="fas fa-bars"></i>
-              <i class="fas fa-times"></i>
-            </div>
-            <ul class="hamburger_menu_list">
+          <div class="nav__mobile">
+            <ul class="nav__icons">
               <li>
-                <a href="index.html" class="nav_link">home</a>
+                <i class="fas fa-times"></i>
               </li>
               <li>
-                <a href="#" class="nav_link">catalog</a>
+                <i class="fas fa-bars"></i>
               </li>
-              <li>
-                <a href="#" class="nav_link">about us</a>
+            </ul>
+            <ul class="nav__mobileLinks">
+              <li class="nav__mobileItem">
+                <a href="#">Home</a>
               </li>
-              <li>
-                <a href="#" class="nav_link">contact us</a>
+              <li class="nav__mobileItem">
+                <a href="#">About</a>
               </li>
-              <li>
-                <a href="#" class="nav_link">cart</a>
+              <li class="nav__mobileItem">
+                <a href="#">Repairs</a>
+              </li>
+              <li class="nav__mobileItem">
+                <a href="#">Contacts</a>
               </li>
             </ul>
           </div>
         </ul>
       </div>
     </nav>
-    <header>
-      <div class="header_center">
-        <h1>Ave Maria</h1>
+<!-- NAV_MENU END -->
+<!-- HEADER_MENU START -->
+    <header class="header">
+      <div class="header__title">
+        <h1 class="header__headline">Ave Maria</h1>
         <p>Lorem ipsum dolor sit amet, consectetur
           adipisicing elit, sed do eiusmod tempor.</p>
-          <a href="#" class="button">Shop now</a>
+          <a href="#" class="header__button">Shop now</a>
       </div>
     </header>
-    <section class="category_head">
-      <div class="upper_category">
-        <h1>Shop by Caregory</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor.</p>
-      </div>
-      <div class="category">
-          <a href="itempage.html">
-            <div class="category_item_img">
-              <img src="images/gold_category.jpg" alt="Gold Image">
-            </div>
-            <h5 class="category_text">
-              <span>Gold Jewellery</span>
-              <span>Shop Gold</span>
-            </h5>
-          </a>
-          <a href="itempage.html">
-            <div class="category_item_img">
-              <img src="images/category.jpg" alt="Silver Image">
-            </div>
-            <h5 class="category_text">
-              <span>Silver Jewellery</span>
-              <span>Shop Silver</span>
-            </h5>
-          </a>
-          <a href="itempage.html">
-            <div class="category_item_img">
-              <img src="images/gift_category.jpg" alt="Gift Image">
-            </div>
-            <h5 class="category_text">
-              <span>Giftware</span>
-              <span>Shop Giftware</span>
-            </h5>
-          </a>
-      </div>
-      <div class="slider_buttons main_page_button">
-        <div class="buttons_footer">
-          <ul>
-            <li class="numbers_counter">
-              <span>1</span>
-              <span>/2</span>
-            </li>
-            <li>
-              <ul class="active_n_dont_buttons">
-                <li>
-                  <button type="button" name="button" class="active"></button>
-                  <button type="button" name="button" class="non_active"></button>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="buttons_arrows">
-                <li>
-                  <i class="fas fa-caret-left"></i>
-                </li>
-                <li>
-                  <i class="fas fa-caret-right"></i>
-                </li>
-              </ul>
-            </li>
-          </ul>
+<!-- HEADER_MENU END -->
+<!-- CATEGORY_SECTION START -->
+    <section class="products">
+      <div class="products__container container">
+        <div class="products__title title">
+          <h1>Shop by Category</h1>
         </div>
+          <div class="products__column column wrapper">
+            <div class="products__item">
+              <div class="products__image">
+                <img src="images/gold_category.jpg" alt="">
+              </div>
+              <div class="products__headline">
+                <h3>Gold Jewellery</h3>
+                <span>Shop Gold</span>
+              </div>
+            </div>
+            <div class="products__item">
+              <div class="products__image">
+                <img src="images/earings.png" alt="">
+              </div>
+              <div class="products__headline">
+                <h3>Silver Jewellery</h3>
+                <span>Shop Silver</span>
+              </div>
+            </div>
+            <div class="products__item">
+              <div class="products__image">
+                <img src="images/gift_category.jpg" alt="">
+              </div>
+              <div class="products__headline">
+                <h3>Gift Jewellery</h3>
+                <span>Shop Gift</span>
+              </div>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="slider__container">
+              <ul class="slider__buttons wrapper">
+                <li class="slider__counter">
+                  <span class="counter__item">1</span>
+                  <span class="counter__item">/2</span>
+                </li>
+                <li class="slider__active_non_active">
+                  <ul class="">
+                    <li class="slider__active_non_active_buttons">
+                      <button type="button" name="button" class="active"></button>
+                      <button type="button" name="button" class="non_active"></button>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="slider__buttonsArrows">
+                    <li class="slider__arrowNext">
+                      <i class="fas fa-caret-left"></i>
+                    </li>
+                    <li class="slider__arrowPrevious">
+                      <i class="fas fa-caret-right"></i>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
+<!-- CATEGORY_SECTION END -->
     </section>
+<!-- ABOUT_US START -->
     <section class="aboutUs">
-        <div class="about_us_head">
-          <div class="about_us_left">
-            <div class="about_us_left_inside">
-              <div class="left_inside_text">
+        <div class="aboutUs__container">
+          <div class="aboutUs__description">
+            <div class="aboutUs__title">
+              <div class="aboutUs__subtitle">
                 <h2>Ave Maria Jewellery</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -159,85 +158,83 @@
                 </p>
                 <a href="#">Read More About Us</a>
               </div>
-              <div class="left_inside_img">
-                <img src="images/aboutus_left.jpg" alt="">
-              </div>
             </div>
           </div>
-          <div class="about_us_right">
-            <img src="images/aboutus.jpg" alt="">
+          <div class="aboutUs__image">
+            <img src="images/aboutus.png" alt="">
           </div>
         </div>
     </section>
-    <section class="discover_new_collection">
-      <div class="discover_nc_head">
-        <h1>Discovery New Collection</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor.</p>
-      </div>
-      <div class="discovery_nc_img">
-        <div class="wrap_both_item">
-          <div class="card_item">
-            <a href="#">
-              <img src="images/disc_img_one.jpg" alt="">
+<!-- ABOUT_US END -->
+<!-- DISCOVERY_NEW_COLECTION START -->
+    <section class="discoverNC">
+      <div class="discoverNC__container container">
+        <div class="discoverNC__title title">
+          <h1>Discovery New Collection</h1>
+        </div>
+        <div class="discoverNC__column  mobile--width">
+          <div class="discoverNC__links">
+            <div class="discoverNC__item">
+              <a href="#" class="image">
+                <img src="images/disc_img_one.png" alt="">
+              </a>
+              <div class="discoverNC__infoItem">
+                <p class="discoverNC__nameItem">Silver Earings</p>
+                <span class="discoverNC__priceItem">$ 240</span>
+              </div>
+            </div>
+          <div class="discoverNC__item">
+            <a href="#" class="image">
+              <img src="images/disc_img_two.png" alt="">
             </a>
-            <div class="info_item">
-              <p class="name_item">Silver Earings</p>
-              <span class="price_item">$ 240</span>
+            <div class="discoverNC__infoItem">
+              <p class="discoverNC__nameItem">Silver Earings</p>
+              <span class="discoverNC__priceItem">$ 240 </span>
             </div>
           </div>
-          <div class="card_item">
-            <a href="#">
-              <img src="images/disc_img_two.jpg" alt="">
+        </div>
+        <div class="discoverNC__links">
+          <div class="discoverNC__item">
+            <a href="#" class="image">
+              <img src="images/disc_img_three.png" alt="">
             </a>
-            <div class="info_item">
-              <p class="name_item">Silver Earings</p>
-              <span class="price_item">$ 240 </span>
+            <div class="discoverNC__infoItem">
+              <p class="discoverNC__nameItem">Silver Earings</p>
+              <span class="discoverNC__priceItem">$ 240</span>
+            </div>
+          </div>
+          <div class="discoverNC__item">
+            <a href="#" class="image">
+              <img src="images/disc_img_four.png" alt="">
+            </a>
+            <div class="discoverNC__infoItem">
+              <p class="discoverNC__nameItem">Silver Earings</p>
+              <span class="discoverNC__priceItem">$ 240</span>
             </div>
           </div>
         </div>
-        <div class="wrap_both_item">
-        <div class="card_item">
-          <a href="#">
-            <img src="images/disc_img_three.jpg" alt="">
-          </a>
-          <div class="info_item">
-            <p class="name_item">Silver Earings</p>
-            <span class="price_item">$ 240</span>
-          </div>
-        </div>
-        <div class="card_item">
-          <a href="#">
-            <img src="images/disc_img_four.jpg" alt="">
-          </a>
-          <div class="info_item">
-            <p class="name_item">Silver Earings</p>
-            <span class="price_item">$ 240</span>
-          </div>
-        </div>
       </div>
-      </div>
-      <div class="slider_buttons main_page_button">
-        <div class="buttons_footer">
-          <ul>
-            <li class="numbers_counter">
-              <span>1</span>
-              <span>/2</span>
+      <div class="slider">
+        <div class="slider__container">
+          <ul class="slider__buttons wrapper">
+            <li class="slider__counter">
+              <span class="counter__item">1</span>
+              <span class="counter__item">/2</span>
             </li>
-            <li>
-              <ul class="active_n_dont_buttons">
-                <li>
+            <li class="slider__active_non_active">
+              <ul class="">
+                <li class="slider__active_non_active_buttons">
                   <button type="button" name="button" class="active"></button>
                   <button type="button" name="button" class="non_active"></button>
                 </li>
               </ul>
             </li>
             <li>
-              <ul class="buttons_arrows">
-                <li>
+              <ul class="slider__buttonsArrows">
+                <li class="slider__arrowNext">
                   <i class="fas fa-caret-left"></i>
                 </li>
-                <li>
+                <li class="slider__arrowPrevious">
                   <i class="fas fa-caret-right"></i>
                 </li>
               </ul>
@@ -245,16 +242,15 @@
           </ul>
         </div>
       </div>
+    </div>
     </section>
-    <section class="contact_us">
-      <div class="contact_us_inside">
-        <div class="left_side_contact">
-          <div class="left_inside_contact">
+<!-- DISCOVERY_NEW_COLECTION END -->
+<!-- CONTACT_US START -->
+    <section class="contactUs">
+      <div class="contactUs__section">
+        <div class="contactUs__description">
+          <div class="contactUs__title">
             <h1>Contact Us</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit, sed do eiusmod tempor.
-            </p>
             <p class="adress"></p>
             <p class="phone_number">Phone Number: 2122 5104</p>
             <div class="time_work">
@@ -263,70 +259,79 @@
               <p>Sunday: Closed</p>
             </div>
           </div>
-          <img src="images/map_left.jpg" alt="">
+          <img src="images/map_left.png" alt="">
         </div>
-        <div class="right_side_map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9934.156595148963!2d-0.119543!3d51.503324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4291f3172409ea92!2z0JvQvtC90LTQvtC90YHQutC40Lkg0JPQu9Cw0Lc!5e0!3m2!1sru!2suk!4v1590598228009!5m2!1sru!2suk"
-          width="100%" height="100%" frameborder="0" style="border:0;"
-          allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div id="map">
+
         </div>
       </div>
     </section>
-    <footer>
-      <div class="footer_text">
-        <ul class="social">
-          <li>
+<!-- CONTACT_US END -->
+<!-- FOOTER START -->
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__social">
+          <li class="footer__link">
             <a href="#">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
-          <li>
+          <li class="footer__link">
             <a href="#">
               <i class="fab fa-twitter-square"></i>
             </a>
           </li>
-          <li>
+          <li class="footer__link">
             <a href="#">
               <i class="fab fa-facebook-square"></i>
             </a>
           </li>
-          <li>
+          <li class="footer__link">
             <a href="#">
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
         </ul>
-        <ul class="contactList">
-          <li>
+        <ul class="footer__contact">
+          <li class="footer__item">
             <a href="#">About</a>
           </li>
-          <li>
+          <li class="footer__item">
             <a href="#">Contact</a>
           </li>
-          <li>
+          <li class="footer__item">
             <a href="#">Offline Store</a>
           </li>
-          <li>
+          <li class="footer__item">
             <a href="#">Product Care</a>
           </li>
-          <li>
+          <li class="footer__item">
             <a href="#">Delivery & Returns</a>
           </li>
         </ul>
-        <div class="emailForm">
+        <div class="footer__emailForm">
           <input type="text" class="email" name="email" value="" placeholder="Email">
           <button type="button" class="buttonFooter" name="button">Subscribe</button>
         </div>
-        <div class="downFooter">
+        <div class="footer__cards">
           <ul>
-            <li>Powered by Anthony</li>
-            <li>Privacy Policy</li>
-            <li><img src="images/visa.svg" alt=""></li>
-            <li><img src="images/mastercard.svg" alt=""></li>
+            <li class="footer__item">Powered by Anthony</li>
+            <li class="footer__item">Privacy Policy</li>
+            <li class="footer__item">
+              <img class="footer__icons" src="images/visa.svg" alt="">
+            </li>
+            <li class="footer__item">
+              <img class="footer__icons" src="images/mastercard.svg" alt="">
+            </li>
           </ul>
         </div>
       </div>
     </footer>
+<!-- FOOTER END -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQjzTazl53CS7SmUMXwZRGYO-MRk_IOwE&callback=initMap">
+    </script>
+    <script src="js/map.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

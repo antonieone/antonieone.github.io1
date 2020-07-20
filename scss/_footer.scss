@@ -1,0 +1,68 @@
+.footer,
+.footer__container{
+  @include flexStyle(center, center, column);
+}
+.footer__social,
+.footer__contact,
+.footer__item{
+  @include flexStyle(center, center, row);
+}
+
+.footer{
+  background: $black_color;
+  &__container{
+    margin: 4rem 0;
+  }&__link > a > i{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: $grey_color;
+    &:hover{
+      color: $beige_color;
+    }
+  }&__item{
+    padding: .5rem;
+  }&__emailForm{
+    @include flexStyle(center, space-between, row);
+    width: 100%;
+    padding-top: 3rem;
+  }&__cards{
+    width: 100%;
+    & > ul{
+      @include flexStyle(center, space-between, row);
+      flex-wrap: wrap;
+      color: $white_color;
+    }
+  }&__icons{
+    height: 4.5vh;
+  }
+}
+
+
+.email{
+  flex: 0 0 75%;
+  border: 0;
+  color: $white_color;
+  background: $black_color;
+  border-bottom: 1px solid $white_color;
+}
+.buttonFooter{
+  padding: .6rem 1rem;
+  background: $grey_color;
+  color: white;
+  border: 0;
+  &:hover{
+    background: $beige_color;
+    cursor: pointer;
+  }
+}
+
+
+
+
+@media (max-width:$mobile){
+  .footer__contact,
+  .footer__cards > ul{
+    flex-flow: column;
+  }
+
+}

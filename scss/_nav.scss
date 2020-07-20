@@ -1,0 +1,96 @@
+input[type='text']:focus{
+  border-bottom-color: $beige_color;
+}
+a:hover{
+  color:$beige_color;
+}
+.logo{
+  @include fontStyle(1.5rem, $white_color);
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.nav{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: $black_color;
+  &__container{
+    @include flexStyle(center, space-between, row);
+    padding: 1.5rem 0;
+    width: 80%;
+    margin: 0 auto;
+  }&__menu{
+    @include flexStyle(center, center, row);
+  }&__item{
+    padding: 0 1rem;
+    @include fontStyle(1rem, $white_color);
+    &:last-child{
+      padding-right: 0rem;
+    }
+  }&__icons{
+    display: none;
+  }&__mobileLinks{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    @include flexStyle(center, center, column);
+    background-color: $white_color;
+    opacity: 0;
+    transform: scale(0);
+    transition: .5s;
+  }&__mobileItem{
+    padding: 1.5rem;
+    & > a{
+      @include fontStyle(2rem, $black_color);
+    }& > a:hover{
+      color: $beige_color;
+    }
+  }
+}
+.menu_open .nav__mobileLinks{
+  opacity: 1;
+  transform: scale(1);
+}
+.menu_open .nav__icons .fa-times{
+  display: block;
+}
+.menu_open .nav__icons .fa-bars{
+  display: none;
+}
+.fa-times,
+.fa-bars{
+  @include fontStyle(1.5rem, $beige_color);
+}
+@media screen and (max-width:$desktop) {
+  .search_icon > a,
+  .likes_icon > a,
+  .cart_icon > a{
+    color: $white_color;
+  }
+  .container{
+    width: 100%;
+  }
+  .nav__icons{
+    @include flexStyle(center, center, row);
+    z-index: 10;
+    cursor: pointer;
+  }
+  .nav__icons .fa-times{
+    display: none;
+  }
+  .nav__item{
+    display: none;
+    padding: 0 1rem;
+    @include fontStyle(1rem, $white_color);
+    &:last-child{
+      padding-right: 0rem;
+    }& > a:hover{
+      color: $beige_color;
+    }
+  }
+}
