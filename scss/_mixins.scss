@@ -30,7 +30,7 @@
   color: $black_color;
 }
 @mixin adapFont{
-  font-size: calc(17px + (30 - 17) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(13px + (26 - 13) * ((100vw - 320px) / (1920 - 320)));
 }
 @mixin adapHeaderFont {
   font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (1920 - 320)));

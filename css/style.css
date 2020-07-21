@@ -310,19 +310,19 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-flow: row;
-  padding: 1rem;
+  padding: 2rem;
   transform: translateY(-3rem);
   font-size: 1rem;
   font-family: 'Fondamento', cursive;
   font-style: normal;
   color: #000;
-  font-size: calc(17px + (30 - 17) * ((100vw - 320px) / (1920 - 320))); }
+  font-size: calc(13px + (26 - 13) * ((100vw - 320px) / (1920 - 320))); }
   .title > h1 {
     font-size: 1rem;
     font-family: 'Fondamento', cursive;
     font-style: normal;
     color: #FFF;
-    font-size: calc(17px + (30 - 17) * ((100vw - 320px) / (1920 - 320))); }
+    font-size: calc(13px + (26 - 13) * ((100vw - 320px) / (1920 - 320))); }
 
 .column,
 .products__column,
@@ -504,41 +504,41 @@ a:hover {
     flex-flow: column; } }
 .discoverNC {
   background: #000; }
-
-.discoverNC__title {
-  background: #000; }
-
-.discoverNC__column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  margin: 4rem 0;
-  padding: 1rem; }
-.discoverNC__links {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  width: 100%; }
-.discoverNC__item {
-  flex: 1;
-  display: flex;
-  justify-content: normal;
-  align-items: normal;
-  flex-flow: column;
-  padding: 1rem;
-  border: 1px solid #171717;
-  transition: 1s; }
-  .discoverNC__item:hover {
-    border: 1px solid #FFF; }
-.discoverNC__infoItem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  padding-top: 1rem; }
+  .discoverNC__column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    margin: 4rem 0;
+    padding: 1rem; }
+  .discoverNC__links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    width: 100%; }
+  .discoverNC__title {
+    background: #000; }
+    .discoverNC__title > h2 {
+      color: #FFF; }
+  .discoverNC__item {
+    flex: 1;
+    display: flex;
+    justify-content: normal;
+    align-items: normal;
+    flex-flow: column;
+    padding: 1rem;
+    border: 1px solid #171717;
+    transition: 1s; }
+    .discoverNC__item:hover {
+      border: 1px solid #FFF; }
+  .discoverNC__infoItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-top: 1rem; }
 
 .image {
   position: relative;

@@ -1,6 +1,6 @@
 .title{
   @include flexStyle(center, center, row);
-  padding: 1rem;
+  padding: 2rem;
   transform: translateY(-3rem);
   @include fontStyle(1rem, $black_color);
   @include adapFont;
