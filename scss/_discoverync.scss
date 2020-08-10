@@ -1,8 +1,8 @@
 .discoverNC{
   background: $black_color;
   &__column{
-    @include flexStyle(center, center, row);
-    margin: 4rem 0;
+    position: relative;
+    min-width: 0;
     padding: 1rem;
   }&__links{
     flex: 1;

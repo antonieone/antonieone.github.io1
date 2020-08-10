@@ -1,0 +1,81 @@
+.slick-slider{
+
+}
+.slick-list{
+  overflow: hidden;
+}
+.slick-track{
+  @include flexStyle(start, center, row);
+
+}
+
+
+.slick-slide{
+  @include flexStyle(center, center, row);
+}
+.slick-slide .slick-active{
+
+}
+.slick-slide .slick-current{
+
+}
+.slick-slide .slick-center{
+
+}
+
+
+
+.slick-arrow{
+  position: absolute;
+  font-size: 0;
+  width: 33px;
+  margin-left: 1px;
+  background-color: transparent;
+  border: 1px solid $beige_color;
+  border-radius: 100%;
+  cursor: pointer;
+  &:hover{
+  border: 1px solid $white_color;
+  }
+}
+
+.slick-arrow.slick-prev{
+  bottom: 45px;
+  right: 45px;
+}
+.slick-arrow.slick-next{
+  bottom: 45px;
+  right: 0;
+}
+.slick-arrow .slick-disabled{
+
+}
+
+
+.slick-dots{
+  @include flexStyle(center, center, row);
+  margin: 3rem 0;
+}
+.slick-dots li{
+  list-style: none;
+}
+.slick-dots button{
+  font-size: 0;
+  height: .1rem;
+  width: 100px;
+  background: $grey_color;
+  border: none;
+  cursor: pointer;
+}
+.slick-dots li.slick-active button{
+  background: $white_color;
+}
+
+@media screen and (max-width: $mobile){
+  .slick-dots button{
+    width: 30px;
+  }
+}
+
+
+// DISC SLIDER

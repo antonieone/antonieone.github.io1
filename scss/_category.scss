@@ -9,10 +9,10 @@
     @include adapFont;
   }
 }
-.column,
-.products__column,
-.products__item,
-.slider__buttonsArrows{
+.slider .column,
+.slider .products__column,
+.slider .products__item,
+.slider .slider__buttonsArrows{
   @include flexStyle(center, center, row);
 }
 .products{
@@ -23,13 +23,14 @@
       color: $black_color;
     }
   }&__column{
-    margin: 4rem 0;
+    position: relative;
     padding: 1rem;
   }&__item{
     width: 100%;
     margin: 1rem;
-    flex: 0 0 30%;
-  }&__image{
+  }
+}
+.slider .products__image{
     position: relative;
     @include flexStyle(center, center, column);
     width: 100%;
@@ -51,7 +52,9 @@
     }&:hover:before{
       background-color: rgba(0, 0, 0, 0);
     }
-  }&__headline{
+}
+
+.slider .products__headline{
     position: absolute;
     z-index: 2;
     @include flexStyle(center, center, column);
@@ -61,63 +64,11 @@
     }& > span{
       color: $beige_color;
     }
-  }
-}
-.slider{
-  &__container{
-    padding: 2rem;
-  }&__buttons{
-    @include flexStyle(center, space-between, row);
-  }&__active_non_active_buttons{
-    @include flexStyle(center, center, row);
-    padding: 0;
-  }&__arrowPrevious{
-    margin-left: 1rem;
-  }
-}
-.active,
-.non_active{
-  height: .1rem;
-  width: 100px;
-  background: $white_color;
-  border: none;
-  cursor: pointer;
-}
-.non_active{
-  background: $grey_color;
 }
 
-.slider__arrowNext,
-.slider__arrowPrevious{
-  border: 1px solid $beige_color;
-  border-radius: 100%;
-  cursor: pointer;
-  &:hover{
-  border: 1px solid $white_color;
-  }&:hover > i{
-  color: $white_color;
-  }
-}
-.counter__item{
-  font-size: 1.5rem;
-  color: $white_color;
-}
-.fa-caret-left,
-.fa-caret-right{
-  padding: .8rem 1rem;
-  font-size: 1rem;
-  color: $beige_color;
-}
 
 @media only screen and (max-width: $tablet){
   .products__column{
     flex-direction: column;
-  }
-  .slider{
-    &__buttons{
-      flex-direction: column;
-    }&__active_non_active_buttons{
-      padding: .5rem;
-    }
   }
 }
